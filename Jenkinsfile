@@ -1,5 +1,5 @@
 pipeline{
-    agent:any
+    agent any
     stages{
         stage('checkout'){
             steps{
@@ -8,7 +8,7 @@ pipeline{
             }
         }
         stage('Test'){
-            step{
+            steps{
                 sh '''
                    chmod +x test.sh
                    ./test.sh
